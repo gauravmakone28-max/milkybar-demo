@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Milky Bar Cafe</title>
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            background: #fff8f0;
+        }
+
+        header {
+            background: #6b3e26;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background: #f4c2a1;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            color: black;
+        }
+
+        .hero {
+            padding: 60px;
+            text-align: center;
+            background: #ffe4d1;
+        }
+
+        .menu {
+            padding: 30px;
+        }
+
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        <h2>Gallery</h2><img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87" width="200"><img src="https://images.unsplash.com/photo-1544148103-0773bf10d330" width="200"><img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0" width="200">footer {
+            background: #6b3e26;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<script>
+    function calculate() {
+        var price = document.getElementById("item").value;
+        var qty = document.getElementById("qty").value;
+
+        var total = price * qty;
+
+        document.getElementById("total").innerHTML =
+            "Total Bill = ₹" + total;
+    }
+</script>
+
+<body>
+
+    <header>
+        <h1>Milky Bar Cafe</h1>
+        <p>Best Milkshakes & Desserts in Nigdi</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Menu</a>
+        <a href="#">Gallery</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="hero">
+        <h2>Welcome to Milky Bar Cafe</h2>
+        <p>Enjoy delicious milkshakes, coffee and desserts</p>
+    </div>
+
+    <div class="menu">
+        <h2>Popular Menu</h2>
+
+        <div class="menu-item">
+            <span>Oreo Milkshake</span>
+            <span>₹120</span>
+        </div>
+
+        <div class="menu-item">
+            <span>Chocolate Shake</span>
+            <span>₹140</span>
+        </div>
+
+        <div class="menu-item">
+            <span>Cold Coffee</span>
+            <span>₹90</span>
+        </div>
+
+        <div class="menu-item">
+            <span>Ice Cream Sundae</span>
+            <span>₹160</span>
+        </div>
+
+    </div>
+    <a href="https://wa.me/919075973552" style="background:green;color:white;padding:10px;text-decoration:none;">
+        Order on WhatsApp
+    </a>
+
+    <h2>Bill Calculator</h2>
+
+    <select id="item">
+        <option value="120">Oreo Milkshake - ₹120</option>
+        <option value="140">Chocolate Shake - ₹140</option>
+        <option value="90">Cold Coffee - ₹90</option>
+        <option value="160">Ice Cream Sundae - ₹160</option>
+    </select>
+
+    <input type="number" id="qty" placeholder="Quantity">
+
+    <button onclick="calculate()">Calculate Bill</button>
+
+    <h3 id="total"></h3>
+    <footer>
+        <p>Website Demo Created by Gaurav Makone</p>
+    </footer>
+
+</body>
+
+</html <iframe src="https://www.google.com/maps?q=nigdi+pune&output=embed" width="100%" height="300">
+</iframe>
